@@ -1,0 +1,112 @@
+{
+  "dataset_name": "ERDES: A Benchmark Video Dataset for Retinal Detachment and Macular Status Classification in Ocular Ultrasound",
+  "file_format": "mp4",
+  "annotation_level": "clip",
+  "labeling_methodology": {
+    "approach": "adjudication-based workflow",
+    "initial_reviewers": 3,
+    "adjudicator_reviewers": 1,
+    "inter_rater_agreement": "not calculated (adjudication-based workflow)"
+  },
+  "field_descriptions": {
+    "clip_id": "Unique identifier for each video clip",
+    "file_path": "Relative path to video file from data/erdes/",
+    "diagnostic_class": "Primary diagnosis (rd or non_rd)",
+    "subtype": "Specific condition within diagnostic class",
+    "anatomical_subclass": "Location of detachment (RD cases only)",
+    "fps": "Frames per second",
+    "frame_count": "Total number of frames",
+    "width": "Video width in pixels",
+    "height": "Video height in pixels",
+    "duration_seconds": "Video duration in seconds"
+  },
+  "label_definitions": {
+    "diagnostic_class": {
+      "rd": {
+        "name": "Retinal Detachment",
+        "subtypes": [
+          "macula_intact",
+          "macula_detached"
+        ]
+      },
+      "non_rd": {
+        "name": "Non-Retinal Detachment",
+        "subtypes": [
+          "normal",
+          "pvd"
+        ]
+      }
+    },
+    "subtype": {
+      "macula_intact": {
+        "name": "Retinal Detachment with Macula Intact",
+        "anatomical_subclasses": [
+          "TD",
+          "ND"
+        ]
+      },
+      "macula_detached": {
+        "name": "Retinal Detachment with Macula Detached",
+        "anatomical_subclasses": [
+          "TD",
+          "Bilateral"
+        ]
+      },
+      "normal": "Normal (No Pathology)",
+      "pvd": "Posterior Vitreous Detachment"
+    },
+    "anatomical_subclass": {
+      "TD": "Temporal Detachment",
+      "ND": "Nasal Detachment",
+      "Bilateral": "Bilateral Detachment"
+    }
+  },
+  "total_clips": 5381,
+  "summary_statistics": {
+    "diagnostic_class_distribution": {
+      "rd": 502,
+      "non_rd": 4879
+    },
+    "subtype_statistics": {
+      "macula_intact": {
+        "total": 199,
+        "anatomical_subclass_distribution": {
+          "TD": 111,
+          "ND": 88
+        }
+      },
+      "normal": {
+        "total": 4233,
+        "anatomical_subclass_distribution": {}
+      },
+      "macula_detached": {
+        "total": 303,
+        "anatomical_subclass_distribution": {
+          "TD": 151,
+          "Bilateral": 152
+        }
+      },
+      "pvd": {
+        "total": 646,
+        "anatomical_subclass_distribution": {}
+      }
+    },
+    "video_properties": {
+      "fps": {
+        "min": 7.04,
+        "max": 55.87,
+        "mean": 26.88
+      },
+      "frame_count": {
+        "min": 3,
+        "max": 638,
+        "mean": 92.0
+      },
+      "duration_seconds": {
+        "min": 0.12,
+        "max": 25.52,
+        "mean": 3.44
+      }
+    }
+  }
+}

@@ -70,9 +70,9 @@ outputs/
 multirun/
 
 # Data
-data/erdes/
-data/Dataset/
-data/real_test_1k_sample/
+data/erdes/18644370
+data/erdes/Non_Retinal_Detachment/*
+data/erdes/Retinal_Detachment/*    
 *.mp4
 *.avi
 *.mov
@@ -81,6 +81,9 @@ data/real_test_1k_sample/
 *.pkl
 *.npy
 *.npz
+
+# checkpoints
+weights/*
 
 # DVC
 .dvc/
@@ -107,3 +110,5 @@ multirun/
 *.swo
 *.bak*.safetensors
 *.pth
+
+

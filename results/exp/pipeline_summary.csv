@@ -1,0 +1,4 @@
+stage,model,accuracy,sensitivity,specificity,precision,f1,n,tp,tn,fp,fn,combined_sensitivity
+stage1_rd,unet3d,0.9824,0.92,0.9887,0.8932,0.9064,1077,92,966,11,8,
+stage2_macula,unet3d,0.8911,0.9,0.8852,0.8372,0.8675,101,36,54,7,4,
+pipeline,unet3d+unet3d,,0.828,,,,,,,,,0.828

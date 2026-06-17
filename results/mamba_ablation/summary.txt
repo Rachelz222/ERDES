@@ -1,0 +1,5 @@
+Mamba Ablation Summary
+Baseline: F1=0.8675 Sens=0.9000 Spec=0.8852
+Mamba:    F1=0.8780 Sens=0.9000 Spec=0.9016
+Delta F1: +0.0105
+[Summary] Hybrid UNet-Mamba improved F1 from 0.8675 to 0.8780 (delta=+0.0105) with balanced Sens/Spec, validating the Mamba bottleneck design.

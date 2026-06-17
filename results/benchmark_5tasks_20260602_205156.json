@@ -1,0 +1,44 @@
+{
+  "non_rd_vs_rd/resnet3d": {
+    "acc": 0.9749,
+    "sens": 0.94,
+    "spec": 0.9785,
+    "prec": 0.8174,
+    "f1": 0.8744,
+    "n": 1077,
+    "tp": 94,
+    "tn": 956,
+    "fp": 21,
+    "fn": 6,
+    "time_sec": 1512.5,
+    "model": "resnet3d",
+    "task": "non_rd_vs_rd"
+  },
+  "non_rd_vs_rd/unet3d": {
+    "error": "[Errno 2] No such file or directory"
+  },
+  "normal_vs_rd/unet3d": {
+    "error": "[Errno 2] No such file or directory"
+  },
+  "pvd_vs_rd/unetplusplus": {
+    "error": "[Errno 2] No such file or directory"
+  },
+  "macula_detached_vs_intact/unet3d": {
+    "acc": 0.8911,
+    "sens": 0.9,
+    "spec": 0.8852,
+    "prec": 0.8372,
+    "f1": 0.8675,
+    "n": 101,
+    "tp": 36,
+    "tn": 54,
+    "fp": 7,
+    "fn": 4,
+    "time_sec": 236.2,
+    "model": "unet3d",
+    "task": "macula_detached_vs_intact"
+  },
+  "normal_vs_pvd/unet3d": {
+    "error": "[Errno 2] No such file or directory"
+  }
+}
